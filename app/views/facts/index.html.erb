@@ -1,8 +1,10 @@
 <h1>Welcome to Trivster</h1>
-<br /><br />
+<br />
 <% @facts.each do |fact| %>
  <div class="box-18">
 	<h2><%= fact.question %></h2>
 	<h2><%= fact.answer %></h2>
  </div>
 <% end %>
+<br />
+<h2><%= link_to 'Add a Fun Fact', new_fact_path %><h2>
