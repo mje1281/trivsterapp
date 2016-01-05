@@ -1,7 +1,11 @@
 class FactsController < ApplicationController
 
 	def index
-		@trivia = Trivia.all
+		@facts = Fact.all
+	end
+
+	def new
+		@fact = Fact.new
 	end
 
 end

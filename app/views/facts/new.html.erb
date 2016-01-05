@@ -1,0 +1,8 @@
+<h1>Enter Your Place Details</h1>
+
+<%= simple_form_for @fact do |f| %>
+	<%= f.input :question %>
+	<%= f.input :answer %>
+	<br />
+	<%= f.submit "Create", :class => 'btn btn-primary' %>
+<% end %>
